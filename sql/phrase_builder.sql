@@ -19,3 +19,10 @@ audio_location
 '/tmp/EN/US/1.mp3'
 );
 
+INSERT INTO tblphrasemapping (
+lang_phrase_a,
+lang_phrase_b
+) VALUES (
+'1',
+'2'
+);

@@ -23,14 +23,14 @@ CREATE TABLE tblphrase (
 
 DROP TABLE tblphrasemapping;
 CREATE TABLE tblphrasemapping (
-       lang_phrase_a INTEGER,
+       lang_phrase_a INTEGER
        		REFERENCES tblphrase (phrase_id)
 		ON UPDATE CASCADE
 		ON DELETE CASCADE,
-       lang_phrase_b INTEGER,
+       lang_phrase_b INTEGER
        		REFERENCES tblphrase (phrase_id)
 		ON UPDATE CASCADE
-		ON DELETE CASCADE,
+		ON DELETE CASCADE
 );
   
 
