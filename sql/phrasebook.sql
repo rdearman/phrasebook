@@ -20,3 +20,17 @@ CREATE TABLE tblphrase (
        phrase TEXT,
        audio_location TEXT -- decided to go with file pointer, rather than binary storage.
 );
+
+DROP TABLE tblphrasemapping;
+CREATE TABLE tblphrasemapping (
+       lang_phrase_a INTEGER,
+       		REFERENCES tblphrase (phrase_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE,
+       lang_phrase_b INTEGER,
+       		REFERENCES tblphrase (phrase_id)
+		ON UPDATE CASCADE
+		ON DELETE CASCADE,
+);
+  
+
