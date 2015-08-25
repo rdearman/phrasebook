@@ -1,0 +1,42 @@
+<?PHP
+require_once("db.inc");
+require_once("session.php");
+
+if ($user->data['user_id'] == ANONYMOUS || $user->data['user_id'] == '' )
+  {
+    //login_box('', $user->lang['LOGIN']);
+    login_box('','','','','');
+    //login_box($phpbb_root_path . 'my_page.' . $phpEx, $user->lang['LOGIN_VIEWPAGE']);
+  }
+else
+  {
+    echo "<HTML>\n";
+    echo "Welcome back " . $user->data['username']; 
+  }
+/* $user->session_begin(); */
+/* $auth->acl($user->data); */
+/* $user->setup();  */
+
+
+
+
+//if($user->data['is_registered'])
+  //user is logged in
+//  echo "Welcome back " . $user->data['username']; 
+//else
+  //user is not logged in  
+/*   echo "Please Login to the Forum in order to use this software.\n<P><a href=http://how-to-learn-any-language.org>http://how-to-learn-any-language.org</a>"; */
+/* echo <<< EOT */
+/* Please log in:<br /> */
+/* <form method="POST" action="./ucp.php?mode=login"> */
+/* <p>Username: <input type="text" name="username" size="40"><br /> */
+/*   Password: <input type="password" name="password" size="40"><br /> */
+/*   Remember Me?: <input type="checkbox" name="autologin"><br /> */
+/* <input type="submit" value="Submit" name="login"></p> */
+/* <input type="hidden" name="redirect" value="index.php"> */
+/* </form> */
+/* EOT; */
+
+//Placeholder
+?>
+</HTML>

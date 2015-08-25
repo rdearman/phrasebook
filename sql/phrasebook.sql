@@ -44,6 +44,7 @@ DROP TABLE tblcontributor  CASCADE;
 CREATE TABLE tblcontributor (
        contributor_id SERIAL PRIMARY KEY,
        handle TEXT,
+       cookie TEXT,
        contributor_password TEXT,
        native_lang INTEGER -- only going to allow one native langage to work with, if you have more than one, sorry.
        		REFERENCES tblLanguageList (lang_id)

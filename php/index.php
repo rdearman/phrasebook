@@ -1,0 +1,15 @@
+<HTML>
+<form action="/phpBB/ucp.php?mode=login" method="post">
+<input type="hidden" name="redirect" value="./phrasebook/php/lang_list.php" />
+<h3><a href="/phpBB/ucp.php?mode=login">Login</a>&nbsp; &bull; &nbsp; 
+<a href="/phpBB/ucp.php?mode=register">Register</a></h3>
+    <fieldset>
+      <label for="username">Username:</label>&nbsp;
+        <input type="text" name="username" id="username" size="10" title="Username" />
+      <label for="password">Password:</label>&nbsp;
+        <input type="password" name="password" id="password" size="10" title="Password" />
+	<label for="autologin">Log me on automatically each visit 
+<input type="checkbox" name="autologin" id="autologin" /></label>
+        <input type="submit" name="login" value="Login" />
+    </fieldset>
+</form>
